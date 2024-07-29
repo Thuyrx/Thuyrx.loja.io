@@ -9,14 +9,22 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- META TAG OG -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Paraíso Chinellus - A melhor loja do Atacado e Varejo!"/>
+    <meta property="og:description" content="A melhor loja do Atacado e Varejo de Manaus!"/>
+    <meta property="og:site _name" content="Paraíso Chinellus"/>
+
   <link rel="stylesheet" href="./styles/output.css">
-  <title>Dev Burguer - A melhor hambugueria dev!</title>
+  <title>Paraíso Chinellus - A melhor loja do Atacado e Varejo!</title>
 </head>
 
 <body>
@@ -24,15 +32,18 @@
   <!-- HEADER -->
   <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
     <div class="w-full h-full flex flex-col justify-center items-center">
-      <img src="./assets/hamb-1.png" alt="logo devBurguer"
+      <img src="./assets/logo.png" alt="logo devBurguer"
         class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
-      <h1 class="text-3xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
+      <h1 class="text-3xl mt-4 mb-2 font-bold text-yellow-500">Paraíso <span class="text-white"> | </span><span
+          class="text-yellow-500">Chinellus</span></h1>
 
-      <span class="text-white font-medium">Rua dev 10, Campo Grande - MS</span>
+      <span class="text-white font-medium">Entregamos em toda região Norte do Brasil 🚀📦</span>
+
+      <span class="text-white font-medium">Atacado e Varejo! 📈</span>
 
       <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-        <span class="text-white font-medium">Seg á Dom - 18:00 as 22:00</span>
-      </div>
+        <span class="text-white font-medium">Seg a Sáb - 09:30 às 19:30, Dom - 09:00 às 13:00</span>
+    </div>
 
     </div>
   </header>
@@ -49,19 +60,37 @@
 
       <!-- PRODUTO ITEM -->
       <div class="flex gap-2">
-        <img src="./assets/hamb-1.png" alt="Hamburguer Smash"
+        <img src="./assets/peca-1.png" alt="Crocs Classic Pink"
           class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
         <div>
-          <p class="font-bold">Hamburguer Smash</p>
-          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e
-            maionese da casa.</p>
+          <p class="font-bold">Crocs Classic Pink</p>
+          <p class="text-sm">Par de calçados Crocs na cor pink com vários pingentes decorativos. Material de espuma leve
+            e resistente.</p>
 
-          <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 18.90</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash" data-price="18.90">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
+          <div class="flex items-center gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 50</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded justify-center size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crocs Classic Pink"
+                data-price="50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
           </div>
 
         </div>
@@ -71,19 +100,37 @@
 
       <!-- PRODUTO ITEM -->
       <div class="flex gap-2">
-        <img src="./assets/hamb-2.png" alt="Hamburguer Duplo"
+        <img src="./assets/peca-2.png" alt="Crocs Classic Preto v1"
           class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
         <div>
-          <p class="font-bold">Hamburguer Duplo</p>
-          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e
-            maionese da casa.</p>
+          <p class="font-bold">Crocs Classic Preto v1</p>
+          <p class="text-sm">Par de calçados Crocs na cor preta com vários pingentes decorativos. Material de espuma
+            leve e resistente.</p>
 
           <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 32.90</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Duplo" data-price="32.90">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
+            <p class="font-bold text-lg">R$ 50</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-1">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crocs Classic Preto v1"
+                data-price="50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
           </div>
 
         </div>
@@ -93,19 +140,37 @@
 
       <!-- PRODUTO ITEM -->
       <div class="flex gap-2">
-        <img src="./assets/hamb-3.png" alt="Hamburguer Salad"
+        <img src="./assets/peca-3.png" alt="Crocs Classic Marrom Claro"
           class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
         <div>
-          <p class="font-bold">Hamburguer Salad</p>
-          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e
-            maionese da casa.</p>
+          <p class="font-bold">Crocs Classic Marrom Claro</p>
+          <p class="text-sm">Par de calçados Crocs na cor marron claro com vários pingentes decorativos. Material de
+            espuma leve e resistente.</p>
 
           <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 35.90</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Salad" data-price="35.90">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
+            <p class="font-bold text-lg">R$ 50</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-2">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crocs Classic Marrom Claro"
+                data-price="50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
           </div>
 
         </div>
@@ -115,19 +180,197 @@
 
       <!-- PRODUTO ITEM -->
       <div class="flex gap-2">
-        <img src="./assets/hamb-4.png" alt="Hamburguer da casa"
+        <img src="./assets/peca-4.png" alt="Crocs Classic Rosa v1"
           class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
         <div>
-          <p class="font-bold">Hamburguer da casa</p>
-          <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e
-            maionese da casa.</p>
+          <p class="font-bold">Crocs Classic Rosa v1</p>
+          <p class="text-sm">Par de calçados Crocs na cor rosa com vários pingentes decorativos. Material de espuma leve
+            e resistente.</p>
 
           <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 30</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da casa" data-price="30">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
+            <p class="font-bold text-lg">R$ 50</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-3">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crocs Classic Rosa v1"
+                data-price="50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img src="./assets/peca-5.png" alt="Crocs Classic Rosa v2"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Crocs Classic Rosa v2</p>
+          <p class="text-sm">Par de calçados Crocs na cor rosa com vários pingentes decorativos. Material de espuma leve
+            e resistente.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 50</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-4">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crocs Classic Rosa v2"
+                data-price="50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img src="./assets/peca-6.png" alt="Crocs Classic Verde Vibrante"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Crocs Classic Verde Vibrante</p>
+          <p class="text-sm">Par de calçados Crocs na cor verde vibrante com vários pingentes decorativos. Material de
+            espuma leve e resistente.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 50</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-5">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crocs Classic Verde Vibrante"
+                data-price="50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img src="./assets/peca-7.png" alt="Crocs Classic Verde Vibrante"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Crocs Classic Branco</p>
+          <p class="text-sm">Par de calçados Crocs na cor branco com vários pingentes decorativos. Material de espuma
+            leve e resistente.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 50</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-6">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crocs Classic Branco"
+                data-price="50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex gap-2">
+        <img src="./assets/peca-8.png" alt="Crocs Classic Preto v2"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Crocs Classic Preto v2</p>
+          <p class="text-sm">Par de calçados Crocs na cor preto e com vários pingentes decorativos. Material de espuma
+            leve e resistente.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 50</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-7">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Crocs Classic Preto v2"
+                data-price="50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
           </div>
 
         </div>
@@ -138,53 +381,417 @@
     </main>
 
     <div class="mx-auto max-w-7xl px-2 my-2">
-      <h2 class="font-bold text-3xl">
-        Bebidas
+      <h2 class="font-bold text-2xl md:text-3xl text-center mt-9 mb-6">
+        Sandalias
       </h2>
     </div>
 
     <!-- GRID BEBIDAS -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
 
-      <!-- BEBIDA ITEM -->
+      <!-- SANDALIA 1 -->
       <div class="flex gap-2 w-full">
-        <img src="./assets/refri-1.png" alt="Coca lata"
+        <img src="./assets/sand-1.png" alt="Sandália Feminina Infantil - Marie"
           class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
         <div class="w-full">
-          <p class="font-bold">Coca lata</p>
-
+          <p class="font-bold">Sandália Feminina Infantil - Marie</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
           <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 6</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca lata" data-price="6">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-8">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sandália Feminina Infantil - Marie"
+                data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
           </div>
 
         </div>
 
       </div>
-      <!-- FIM BEBIDA ITEM -->
+      <!-- FIM SANDALIA 1 -->
 
-      <!-- BEBIDA ITEM -->
+      <!-- SANDALIA 2 -->
       <div class="flex gap-2 w-full">
-        <img src="./assets/refri-2.png" alt="Guaraná lata"
+        <img src="./assets/sand-2.png" alt="Sandália Masculina Infantil"
           class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
 
         <div class="w-full">
-          <p class="font-bold">Guaraná lata</p>
-
+          <p class="font-bold">Sandália Masculina Infantil - Homem-Aranha</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninos.</p>
           <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 6</p>
-            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guaraná lata" data-price="6">
-              <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-9">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Sandália Masculina Infantil - Homem-Aranha" data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
           </div>
 
         </div>
 
       </div>
-      <!-- FIM BEBIDA ITEM -->
+      <!-- FIM SANDALIA 2 -->
+
+      <!-- SANDALIA 3 -->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/sand-3.png" alt="Sandália Feminia Infantil - Patrulha Canina"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div class="w-full">
+          <p class="font-bold">Sandália Feminia Infantil - Patrulha Canina</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-10">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Sandália Feminia Infantil - Patrulha Canina" data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM SANDALIA 3 -->
+
+      <!-- SANDALIA 4 -->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/sand-4.png" alt="Sandália Feminia Infantil - Princesa Sofia"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div class="w-full">
+          <p class="font-bold">Sandália Feminia Infantil - Princesa Sofia</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-11">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Sandália Feminia Infantil - Princesa Sofia" data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM SANDALIA 4 -->
+
+      <!-- SANDALIA 5-->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/sand-5.png" alt="Sandália Feminia Infantil - Lilo e Stitch v1"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div class="w-full">
+          <p class="font-bold">Sandália Feminia Infantil - Lilo e Stitch v1</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-12">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Sandália Feminia Infantil - Lilo e Stitch v1" data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM SANDALIA 5 -->
+
+      <!-- SANDALIA 6-->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/sand-6.png" alt="Sandália Feminia Infantil - Lilo e Stitch v2"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div class="w-full">
+          <p class="font-bold">Sandália Feminia Infantil - Lilo e Stitch v2</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-13">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Sandália Feminia Infantil - Lilo e Stitch v2" data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM SANDALIA 6 -->
+
+      <!-- SANDALIA 7 -->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/sand-7.png" alt="Sandália Feminia Infantil - Stitch v1"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div class="w-full">
+          <p class="font-bold">Sandália Feminia Infantil - Stitch v1</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-14">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sandália Feminia Infantil - Stitch v1"
+                data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM SANDALIA 7 -->
+
+      <!-- SANDALIA 8 -->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/sand-8.png" alt="Sandália Feminia Infantil - Margarida"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div class="w-full">
+          <p class="font-bold">Sandália Feminia Infantil - Margarida</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-15">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sandália Feminia Infantil - Margarida"
+                data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM SANDALIA 8 -->
+
+      <!-- SANDALIA 9 -->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/sand-9.png" alt="Sandália Feminia Infantil - Vaquinha"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div class="w-full">
+          <p class="font-bold">Sandália Feminia Infantil - Vaquinha</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-16">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sandália Feminia Infantil - Vaquinha" data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM SANDALIA 9 -->
+
+      <!-- SANDALIA 10-->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/sand-10.png" alt="Sandália Feminia Infantil - Stitch v2"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div class="w-full">
+          <p class="font-bold">Sandália Feminia Infantil - Stitch v2</p>
+          <p class="text-sm">Este par de sandálias oferece a
+            qualidade das Havaianas, garantindo conforto e durabilidade. É uma peça
+            divertida e estilosa para as meninas.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15</p>
+            <div class="flex gap-2 ml-auto">
+              <select class="bg-gray-200 text-lg px-2 rounded size-selector">
+                <option value="">Tam</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+              </select>
+              <button class="bg-green-500 text-white text-lg px-5 rounded ml-auto" id="cart-visual-btn-17">
+                visualizar
+              </button>
+              <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sandália Feminia Infantil - Stitch v2" data-price="15">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- FIM SANDALIA 10 -->
 
     </div>
     <!-- FIM GRID BEBIDAS -->
@@ -192,9 +799,260 @@
   </div>
   <!-- FIM MENU -->
 
-  <!-- MODAL CART -->
+  <!-- CART VISUALIZAÇÃO 1 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-visual">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/peca-1.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 1 -->
+
+  <!-- CART VISUALIZAÇÃO 2 -->
   <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
-  id="cart-modal">
+    id="cart-visual-1">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-1">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/peca-2.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 2 -->
+
+  <!-- CART VISUALIZAÇÃO 3 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-2">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-2">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/peca-3.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 3 -->
+
+  <!-- CART VISUALIZAÇÃO 4 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-3">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-3">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/peca-4.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 4 -->
+
+  <!-- CART VISUALIZAÇÃO 5 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-4">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-4">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/peca-5.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 5 -->
+
+  <!-- CART VISUALIZAÇÃO 6 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-5">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-5">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/peca-6.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 6 -->
+
+  <!-- CART VISUALIZAÇÃO 7 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-6">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-6">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/peca-7.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 7 -->
+
+  <!-- CART VISUALIZAÇÃO 8 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-7">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-7">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/peca-8.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 8 -->
+
+  <!-- CART VISUALIZAÇÃO 9 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-8">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-8">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-1.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 9 -->
+
+  <!-- CART VISUALIZAÇÃO 10 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-9">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-9">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-2.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 10 -->
+
+  <!-- CART VISUALIZAÇÃO 11 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-10">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-10">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-3.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 11 -->
+
+  <!-- CART VISUALIZAÇÃO 12 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-11">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-11">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-4.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 12 -->
+
+  <!-- CART VISUALIZAÇÃO 13 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-12">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-12">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-5.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 13 -->
+
+  <!-- CART VISUALIZAÇÃO 14 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-13">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-13">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-6.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 14 -->
+
+  <!-- CART VISUALIZAÇÃO 15 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-14">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-14">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-7.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 15 -->
+
+  <!-- CART VISUALIZAÇÃO 16 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-15">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-15">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-8.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 16 -->
+
+  <!-- CART VISUALIZAÇÃO 17 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-16">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-16">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-9.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 17 -->
+
+  <!-- CART VISUALIZAÇÃO 18 -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-visual-17">
+    <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[500px] relative">
+      <button class="absolute top-3 right-4" id="close-modal-btn-17">
+        <i class="fa fa-times text-3xl text-black"></i>
+      </button>
+      <div class="flex justify-center mb-1">
+        <img src="./assets/sand-10.png" alt="Hamburguer Smash" class="w-100 h-100 rounded-md" />
+      </div>
+    </div>
+  </div>
+  <!-- FIM CART VISUALIZAÇÃO 18 -->
+
+
+  <!-- MODAL CART -->
+  <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
 
     <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
       <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
@@ -209,7 +1067,7 @@
       <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
 
       <div class="flex items-center justify-between mt-5 w-full">
-        <button id="close-modal-btn">Fechar</button>
+        <button id="close-modal-btn-cart">Fechar</button>
         <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
       </div>
 
@@ -220,11 +1078,11 @@
 
 
   <!-- BUTTON CART FOOTER -->
-  <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
-    <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+  <footer class="w-full bg-yellow-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+    <button class="flex items-center gap-2 text-black font-bold" id="cart-btn">
       (<span class="" id="cart-count">0</span>)
       Veja meu carrinho
-      <i class="fa fa-cart-plus text-lg text-white"></i>
+      <i class="fa fa-cart-plus text-lg text-black"></i>
     </button>
   </footer>
   <!-- FIM BUTTON CART FOOTER -->
@@ -232,4 +1090,5 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
